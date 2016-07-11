@@ -12,7 +12,8 @@
 			<figure class="logotipo"> <!-- logotipo -->
 				<img src="img/Logo_Header.png" width="70" height="70" alt="Visible logotipo"/>
 			</figure>
-			<nav class="menu"> <!-- menu -->
+			<span class="menu_btn icon-menu" id="menu_btn"></span>
+			<nav class="menu" id="menu"> <!-- menu -->
 			<ul>
 				<li>
 					<a class="transicion escala" href="#">Acerca de</a>
@@ -27,7 +28,7 @@
 			</nav>
 		</header>
 		<div class="contenedor img_principal">
-			<img class="principal" width="700" height="250" src="img/Title_Front.png" alt="Imagen Principal Visible"/>
+			<img class="principal" width="700" height="250" src="img/Tittle_Front_Big.png" alt="Imagen Principal Visible"/>
 		</div>
 		<div class="contenedor img_principal">
 		<div class="cont_btn transicion escala_btn">
@@ -45,9 +46,19 @@
 				<a href="mailto:informacion@todovisible.com"><img class="btn-social transicion escala" src="img/Mail-icon.png" width="40" height="40" alt="Email"/></a>
 			</nav>
 		</div>
-	<footer class="contendedor">
+	<footer class="contenedor">
 		<p class="copyright"><b>&copy;Visible Agencia Creativa</b> ~ 2016 Todos los Derechos Reservados</p>
 	</footer>
 	</section>
+	<script>
+  		var $menuBtn = document.getElementById('menu_btn');
+  		var $menu = document.getElementById('menu');
+
+  		$menuBtn.addEventListener('touchstart', toggleMenu);
+
+  		function toggleMenu(){
+    	$menu.classList.toggle('active')
+  		};
+ 	</script>
 </body>
 </html>
