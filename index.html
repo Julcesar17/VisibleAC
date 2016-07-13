@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 </head>
 <body>
-	<section class="portada background"> <!-- portada -->
-		<header class="contenedor"> <!-- header -->
+	<section id="home" class="portada background"> <!-- portada -->
+		<header class="header"> <!-- header -->
 			<figure class="logotipo"> <!-- logotipo -->
 				<img src="img/Logo_Header.png" width="70" height="70" alt="Visible logotipo"/>
 			</figure>
@@ -16,13 +16,16 @@
 			<nav class="menu" id="menu"> <!-- menu -->
 			<ul>
 				<li>
-					<a class="transicion escala" href="#">Acerca de</a>
+					<a class="transicion escala" href="#acerca_de">Acerca de</a>
 				</li>
 				<li>
-					<a class="transicion escala" href="https://www.behance.net/todovisible" target="_blank">Portafolio</a>
+					<a class="transicion escala" href="portafolio">Portafolio</a>
 				</li>
 				<li>
-					<a class="transicion escala" href="mailto:informacion@todovisible.com">Contacto</a>
+					<a class="transicion escala" href="Equipo">Equipo</a>
+				</li>
+				<li>
+					<a class="transicion escala" href="contacto">Contacto</a>
 				</li>
 			</ul>
 			</nav>
@@ -50,6 +53,9 @@
 		<p class="copyright"><b>&copy;Visible Agencia Creativa</b> ~ 2016 Todos los Derechos Reservados</p>
 	</footer>
 	</section>
+	<section id="acerca_de" style="min-height:677px" class="background">
+	</section>
+
 	<script>
   		var $menuBtn = document.getElementById('menu_btn');
   		var $menu = document.getElementById('menu');
